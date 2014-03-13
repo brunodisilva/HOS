@@ -1,0 +1,33 @@
+<?
+$dbhost="localhost";
+$dbname="loginmanager";
+$dbusername="root";
+$dbpass="";
+$mpp=20;
+$v_emailfrom="admin@yourdomain.com";
+$droot="d:/program files/apache group/apache/htdocs";
+$url_root="http://localhost";
+$signup_activate="http://localhost/reg_activate.php";
+$adminusername="admin";
+$alogout="logout.php";
+$resultpage = "../authenticate.php";
+$resultpage1 = "authenticate_admin.php";
+$admin = "index.php";
+$welcome = "http://localhost/members/welcome.php";
+$success = "http://localhost/members/index.php";
+$failure = "failed.php";
+$GonxAdmin["dbhost"] = "localhost";
+$GonxAdmin["dbname"] = "loginmanager";
+$GonxAdmin["dbuser"] = "root";
+$GonxAdmin["dbpass"] = "";
+$GonxAdmin["dbtype"] = "mysql";
+$GonxAdmin["compression"] = array("bz2","zlib");
+$GonxAdmin["compression_default"] = "zlib";
+$GonxAdmin["locale"] = "en";
+$GonxAdmin["pagedisplay"] = 10;
+$GonxAdmin["mysqldump"] = "/usr/bin/mysqldump";
+require_once("libs/db.class.php");
+require_once("libs/gonxtabs.class.php");
+require_once("libs/backup.class.php");
+require_once("libs/locale.class.php");
+?>

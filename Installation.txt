@@ -1,0 +1,80 @@
+#########################################
+#					#
+#	Login Manager, Version 3.0	#
+#					#
+#  	 Member Management System	#
+#					#
+#					#
+#					#
+#     Designed by Easebay Resources	#
+#	All Rights Reserved, 2004	#	
+#					#
+#    Website: www.easebayresources.com	#
+#					#
+#########################################
+
+
+====================
+Installation.txt
+====================
+Install Login Manager V3.0 to your server is simple and easy, follow the instructions below.
+
+1.	Unzip and extract the file.
+	(for unix:)
+	tar -zxvf loginmanager.tar.gz
+
+	(for windows:)
+	use winzip to extract loginmanager.zip file.
+
+
+2.	Use DB management software like phpMyAdmin to create DB username and password and add a new database called "loginmanager".
+
+
+
+3.	open file .htaccess under members folder, find line "ErrorDocument 403...." then update the URL to forbidden page: 
+ErrorDocument 403 http://www.yourdomain.com/forbidden.php
+
+
+4.	FTP all files to web server:
+
+	/document root/
+	/document root/admin
+	/document root/members
+
+
+	CHMOD all files to 755
+	CHMOD "members" folder to 777
+	CHMOD "admin/backup" folder to 777
+	CHMOD file "admin/setup.php" to 777
+	CHMOD file "admin/authconfig.php" to 777
+
+
+5.	Set up Login Manger V3.0 application.
+	Type http://www.yourdomain.com/admin/setup.php on your web browser to open setup page, where yourdomain.com is your website domainname.
+	Enter the appropriate setting paramenters.
+	For DB backup purpose, find where is the path to "mysqldump" on your server, by default it is: /usr/bin/mysqldump
+	After submitting the result, you will be redirected to the administrator login form, meanwhile this "setup.php" file is removed. Later on if you want to change the settings, edit the file "admin/authconfig.php".
+
+
+6.	Login to admin control panel as:
+	Login ID: admin
+	Password: admin123
+	then click "Change Password" to change the admin password, after changing password, you are required to login again.
+
+
+7. 	Access to admin page: 
+	http://www.yourdomain.com/admin/login.php
+	Access to memeber login page:
+	http://www.yourdomain.com/login.php
+
+
+--------------------
+Now you have completed setting up Login Manager V3.0 on the web server, it's ready to use!
+
+Read "Readme.txt" for how to use this application.
+--------------------
+
+
+
+
+Copyright© 2004 Easebay Resources

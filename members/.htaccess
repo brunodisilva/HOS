@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+
+#Add file extension here to restrict url access
+<Files ~ "\.(asf|asp|asx|au|avi|bm|bmp|css|doc|eps|exe|gif|gz|gzip|htm|html|htmls|ico|jpe|jpeg|jpg|js|lsp|mid|midi|mod|mov|mp3|mp3|mpeg|mpg|mpg|pdf|pic|pict|pl|png|ppt|ppt|ps|psd|qt|ra|ram|rm|rmi|rtf|shtml|shtml|swf|text|tgz|tif|tiff|txt|vsd|wav|word|wp|wri|xls|xml|zip)$">
+  Deny from all
+</Files>
+
+ErrorDocument 403 http://www.yourdomain.com/forbidden.php
+
